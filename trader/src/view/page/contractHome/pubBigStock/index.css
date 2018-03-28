@@ -1,0 +1,40 @@
+.bigStock{
+	width: 100%;
+	height: 17.8%;
+	background: #20212a;
+}
+.bigStock ul{
+	width: 10.36rem;
+  	height: 100%;
+  	border-bottom:0.02rem solid #1b1b23;
+}
+.bigStock li{
+	width: 3.43rem;
+  	height: 100%;
+  	border-right:0.02rem solid #1b1b23;
+}
+.bigStock p{
+	width: 3.43rem;
+  	font: 500  0.38rem/1rem  "Microsoft YaHei";
+	color: #fff;
+	text-align: center;
+}
+.bigStock span{
+	display: block;
+	width: 3.43rem;
+  	font: 500  0.31rem/0.41rem  "Microsoft YaHei";
+	color: #fe0042;
+	text-align: center;
+}
+.bigStock i{
+  	font: 500  0.24rem/0.64rem  "Microsoft YaHei";
+	color: #fe0042;
+	text-align: ;
+	margin-right: 0.18rem;
+	margin-left: 0.98rem;
+}
+.bigStock b{
+  	font: 500  0.24rem/0.64rem  "Microsoft YaHei";
+	color: #fe0042;
+	text-align: center;
+}

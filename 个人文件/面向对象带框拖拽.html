@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com">
+<meta name="copyright" content="智能社 - zhinengshe.com">
+<title>智能社 - www.zhinengshe.com</title>
+<style>
+*{margin:0; padding:0;}
+#box{width:100px; height:100px;background:#f90; position:absolute; top:0; left:0;}
+/*.newDiv{width:90px; height:90px;background:#f90; position:absolute; top:0; left:0; border:5px dashed black;}
+*/</style>
+<script src="drag.js"></script>
+<script>
+	function FrameDrag(id){
+		Drag.call(this,id);
+	}
+	FrameDrag.prototype = new Drag();
+	FrameDrag.prototype.constructor = FrameDrag;
+	
+	var parent  = {};
+	for(var name in FrameDrag.prototype){
+		parent[name] = FrameDrag.prototype[name];
+	}
+	FrameDrag.prototype.fnDown = function(){
+		parent['fnDown'].apply(this,arguments);
+		this.oNewDiv = document.createElement('div');
+		this.oNewDiv.style.width = this.oBox.offsetWidth - 10 +'px';
+		this.oNewDiv.style.height = this.oBox.offsetHeight - 10 +'px';
+		this.oNewDiv.style.left = this.oBox.offsetLeft+'px';
+		this.oNewDiv.style.top = this.oBox.offsetTop+'px';
+		
+		this.oNewDiv.style.border = '5px dashed black';
+		
+		this.oNewDiv.style.position = 'absolute';
+		this.oBox.parentNode.appendChild(this.oNewDiv);
+		//狸猫换太子
+		this.oldDiv = this.oBox;
+		this.oBox = this.oNewDiv;
+	};
+	FrameDrag.prototype.fnUp = function(){
+		parent['fnUp'].apply(this,arguments);
+		
+		this.oldDiv.style.left = this.oBox.offsetLeft+'px';
+		this.oldDiv.style.top = this.oBox.offsetTop+'px';
+		this.oBox.parentNode.removeChild(this.oBox);
+		this.oBox = this.oldDiv;
+	};
+</script>
+<script>
+	window.onload = function(){
+		new FrameDrag('box');	
+	};
+</script>
+</head>
+
+<body>
+<div id="box"></div>
+<div class="newDiv"></div>
+</body>
+</html>

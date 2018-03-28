@@ -1,0 +1,164 @@
+.mineRute{
+	width: 100%;
+	height: 100%;
+	background: #191a22;
+}
+.hB{
+	height: 5.72%;
+}
+.homeHead b{
+	width: 0.45rem;
+	height: 0.44rem;
+	position: absolute;
+	top: 0.35rem;
+	right: 1.46rem;
+	background: url('img/shezhi.png') no-repeat;
+	background-size: 0.45rem 0.44rem; 
+}
+.homeHead strong{
+	width: 0.45rem;
+	height: 0.44rem;
+	position: absolute;
+	top: 0.35rem;
+	right: 0.43rem;
+	background: url('img/youxiang.png') no-repeat;
+	background-size: 0.45rem 0.44rem; 
+}
+.isDisLogin{
+	background: #20212a;
+	width: 100%;
+	height: 22%;
+	border-bottom: 0.17rem solid #1b1b23;
+}
+.isDisLo{
+	width: 100%;
+	height: 100%;
+}
+.login{
+	width: 10.36rem;
+	margin-left: 0.22rem;
+	border-bottom: 0.02rem solid #1b1b23;
+	padding-top: 0.54rem;
+	height: 1.84rem;
+}
+.headPic{
+	width: 1.31rem;
+	height:1.31rem ;
+	margin-right: 0.4rem;
+	background: url('img/touxiangkuang1.png') no-repeat;
+	background-size: 1.31rem 1.31rem; 
+}
+.headPic span{
+	display: block;
+	width: 1.31rem;
+	height:1.31rem ;
+	background: url('img/touxiangkuang.png') no-repeat;
+	background-size: 1.31rem 1.31rem; 
+}
+.myInfo{
+	width: 8.32rem;
+	color: #acacac;
+}
+.myName{
+	font: 500  0.27rem/0.77rem  "Microsoft YaHei";
+}
+.myId{
+	font: 500  0.27rem/0.67rem  "Microsoft YaHei";
+}
+.login b{
+	width: 0.2rem;
+	height:0.34rem ;
+	margin-top: 0.4rem;
+	background: url('img/jiantou.png') no-repeat;
+	background-size: 0.2rem 0.34rem; 
+}
+.moreInfo{
+	width: 100%;
+	padding-top: 0.16rem;
+}
+.moreInfo li{
+	width: 33.3%;
+	text-align: center;
+}
+.moreInfo li p{
+	color: #fff;
+	font: 500  0.27rem/0.49rem  "Microsoft YaHei";
+}
+.moreInfo li span{
+	display: block;
+	color: #919192;
+	font: 500  0.27rem/0.47rem  "Microsoft YaHei";
+}
+.noLogin{
+	width: 10.36rem;
+    margin-left: 0.22rem;
+    border-bottom: 0.02rem solid #1b1b23;
+    padding-top: 0.54rem;
+    height: 1.84rem;
+}
+.loginBtn{
+	width: 1.79rem;
+	height: 0.8rem;
+	background: url('img/denglu.png') no-repeat;
+	background-size: 1.79rem 0.8rem;
+	margin-top: 0.26rem;
+	margin-right: 0.51rem;
+}
+.registeredBtn{
+	width: 1.79rem;
+	height: 0.8rem;
+	background: url('img/zhuce.png') no-repeat;
+	background-size: 1.79rem 0.8rem;
+	margin-top: 0.26rem;
+}
+/* 更多个人信息列表 */
+.moreInfoList{
+	width: 100%;
+	background: #20212a;
+}
+.moreInfoList li{
+	width: 100%;
+	border-bottom: 0.12rem solid #1b1b23;
+
+}
+.moreInfoList li i{
+	width: 0.7rem;
+	height: 0.7rem;
+	float: left;
+	margin-left: 0.54rem;
+	margin-top: 0.32rem;
+	margin-right: 0.32rem;
+}
+.moreInfoList li span{
+	color: #f7f7f6;
+	font: 500  0.36rem/1.2rem  "Microsoft YaHei";
+	float: left;
+}
+.moreInfoList li .assets{
+	background: url('img/zichan.png') no-repeat;
+	background-size: 0.7rem 0.7rem;
+}
+.moreInfoList li .plotNotes{
+	background: url('img/celuejilu.png') no-repeat;
+	background-size: 0.7rem 0.7rem;
+}
+.moreInfoList li .friends{
+	background: url('img/haoyou.png') no-repeat; 
+	background-size: 0.7rem 0.7rem;
+}
+.moreInfoList li .plots{
+	background: url('img/celue.png') no-repeat; 
+	background-size: 0.7rem 0.7rem;
+}
+.moreInfoList li .spreat{
+	background: url('img/tuiguang.png') no-repeat; 
+	background-size: 0.7rem 0.7rem;
+}
+.moreInfoList li .set{
+	background: url('img/shezhi1.png') no-repeat; 
+	background-size: 0.7rem 0.7rem;
+}
+.moreInfoList li .simulationTrader{
+	background: url('img/monijiaoyi.png') no-repeat; 
+	background-size: 0.7rem 0.7rem;
+}

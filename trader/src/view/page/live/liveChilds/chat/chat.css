@@ -1,0 +1,68 @@
+.chatList{
+	position: absolute;
+	width: 10.36rem;
+	margin-left: 0.22rem;
+	padding-bottom: 1.5rem;
+}
+.chatList li{
+	width: 100%;
+	padding-top: 0.46rem;
+}
+.chatList i{
+	margin-left: 0.2rem;
+	margin-right: 0.2rem;
+	width: 1.32rem;
+	height: 1.32rem;
+	border-radius: 50%;
+	background: url('img/touxiangkuang.png') no-repeat;
+	background-size: 1.32rem 1.32rem;
+}
+.chatList span{
+	width: 7rem;
+	text-align: center;
+	margin-left: 0.2rem;
+	margin-top: 0.36rem;
+	font: 500  0.32rem  "Microsoft YaHei";
+	color: #a6a6a6;
+}
+.chatBtn{
+	width: 100%;
+	height:18%;
+	background: #191a22;
+}
+.chatBtn i{
+	float: left;
+	width: 0.76rem;
+	height: 0.76rem;
+	background: url('img/shuohua.png') no-repeat;
+	background-size: 0.76rem 0.76rem;
+	margin: 0.27rem 0.44rem 0 0.27rem;
+}
+.chatBtn span{
+	float: left;
+	width: 9rem;
+	height: 0.82rem;
+	margin-top: 0.2rem;
+	text-align: center;
+	background: url('img/bi.png') 40% center  no-repeat;
+	background-size: 0.42rem 0.53rem;
+	font: 500  0.32rem/0.82rem  "Microsoft YaHei";
+	color: #a6a6a6;
+	background-color: #20212a;
+	border-radius: 0.1rem;
+}
+.listC{
+	width: 100%;
+	height: 100%;
+    
+}
+.listChat{
+	width: 100%;
+	height: 72%;
+	overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+.listChat::-webkit-scrollbar {
+  display: none;
+}

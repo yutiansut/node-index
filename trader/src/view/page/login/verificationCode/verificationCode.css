@@ -1,0 +1,59 @@
+.verification{
+	width: 100%;
+}
+.verfiCode{
+	padding-top: 0.6rem;
+	width: 100%;
+	margin-bottom: 0.86rem;
+}
+.verfiCode p{
+	margin-left: 0.4rem;
+	color: #acacac;
+    font: 500 0.38rem/1.32rem "Microsoft YaHei";
+}
+.verfiCodeInput{
+	margin-left: 0.35rem;
+	padding-left: 0.4rem;
+	width: 7.37rem;
+	color: #fff;
+    font: 500 0.38rem/1.3rem "Microsoft YaHei";
+    background: #353641;
+  	border-radius: 0.08rem;
+}
+.codeNum{
+	margin-left: 0.66rem;
+    width: 5.38rem;
+    height: 1.28rem;
+    background: #353641;
+    border: none;
+    color: #fff;
+    font: 400 0.40rem/1.28rem "Microsoft YaHei";
+}
+.codeTime{
+	margin-left: 0.18rem;
+	width: 2.28rem;
+    color: #74757e;
+    text-align: center;
+    border-radius: 0.08rem;
+    font: 500 0.40rem/1.24rem "Microsoft YaHei";
+    border: 0.03rem solid #74757e;
+}
+.codeTimeY{
+    margin-left: 0.18rem;
+    width: 2.28rem;
+    color: #f8cc00;
+    text-align: center;
+    border-radius: 0.08rem;
+    font: 500 0.40rem/1.24rem "Microsoft YaHei";
+    border: 0.03rem solid #f8cc00;
+}
+.roteContract{
+	margin-left:0.52rem;
+	display: block;
+	width: 9.72rem;
+    color: #121318;
+    font: 500 0.44rem/1.3rem "Microsoft YaHei";
+    background: #f8cc00;
+    text-align: center;
+    border-radius: 0.1rem;
+}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#box{
+			width: 300px;
+			height: 100%;
+			background: red;
+		}
+		li{
+			font: bold 30px/60px "Microsoft Yahei";
+			color: #fff;
+		}
+	</style>
+</head>
+<body>
+	<ul id="box">
+		<li>fsdefds jfds  dfs </li>
+		<li>fsdefds jfds  dfs </li>
+		<li>fsdefds jfds  dfs </li>
+		<li>fsdefds jfds  dfs </li>
+	</ul>
+	<script>
+		// var a = b = c = 1;
+		// a
+		// ++
+		// b
+		// --
+		// c
+		// console.log(a,b,c);// 等价于 a; ++b; --c;
+		// console.log(0x1F);
+
+		// var arr = [1,2,"a","1a"];
+		// console.log(typeof arr.toString());
+
+		// var bResult = "a" >= 3;
+		// alert(bResult);
+
+		// function sayHi(a,b) {
+		// 	return a + b;
+		// }
+		// console.log(sayHi.length);
+
+		// var oBox = document.getElementById("box");
+		// var aLi = oBox.getElementsByTagName("li");
+		// console.log(aLi.length);
+		// for (var i = 0;i < aLi.length;i++) {
+			
+		// 	aLi[i].onclick = function () {
+		// 		console.log(i);
+		// 	}
+			
+		// }
+		// for (var i = 0;i < aLi.length;i++) {
+		// 	(function (index) {
+		// 		aLi[index].onclick = function () {
+		// 			console.log(index);
+		// 		}
+		// 	})(i)
+		// }
+
+
+		// var iBaseNum = 10;
+
+		// function addNum(iNum1, iNum2) {
+		//   function doAdd() {
+		//     return iNum1 + iNum2 + iBaseNum;
+		//   }
+		//   return doAdd;
+		// }
+		// var s = addNum(1,2);
+		// console.log(s);
+
+		function fun(n,o){
+		    console.log(o);
+		    return {
+		        fun:function(m){//[2]
+		            return fun(m,n);//[1]
+		        }
+		    }
+		}
+
+		var a=fun(0);==fun{}
+		a.fun(1);//o==
+		a.fun(2);//1
+		a.fun(3);//1
+		var b=fun(0).fun(1).fun(2).fun(3);
+		var c=fun(0).fun(1);//0
+		c.fun(2);//1
+		c.fun(3);//1
+
+
+		var name="global";
+		function foo(){
+		    console.log(name);
+		}
+
+		function fooOuter1(){
+		    var name="local";
+		    foo();
+		}
+		fooOuter1();//输出global 而不是local，并且和闭包没有任何关系
+
+		function fooOuter2(){
+		    var name="local";
+		    function foo(){
+		        console.log(name);
+		    }
+		    foo();
+		}
+		fooOuter2();//输出local 而不是global，在函数声明是name变量作用域就在其外层函数中，嗯嗯就是闭包~
+	</script>
+</body>
+</html>

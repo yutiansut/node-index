@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		var a = "15 27 ";
+		function snapeRem(str) {
+			return str.replace(/\s*/g,"");
+		}
+		console.log(snapeRem(a).length);
+		console.log(a.trim().length);
+
+		function showWindowHref(url) {
+
+			var urlArr = url.split("?");
+
+			if (urlArr[0] == url) {
+				return "";
+			} 
+			var arr = urlArr[1].split("&");
+			var obj = {};
+			for (var i = arr.length - 1; i >= 0; i--) {
+			 	var arg = arr[i].split("=");
+			 	obj[arg[0]] = arg[1];
+			} 
+			return obj;
+		}
+		console.log(showWindowHref("http://www.runoob.com/jquery/misc-trim.html?channelid=12333&name=xiaoming&age=23"));
+
+		function json(str) {
+			var json = {};
+			for (var i=0;i<str.length;i++) {
+				if (!json[str.charAt(i)]) {
+					json[str.charAt(i)] = 1;
+				} else {
+					json[str.charAt(i)] ++;
+				}
+			}
+			return json;
+		}
+		var maxNum = 0;
+		var maxStr = "";
+		var json = json("asdffffffff");
+		for (var name in json) {
+			if (json[name] >= maxNum) {
+
+				maxNum = json[name];
+				maxStr = name;
+			}
+		}
+		console.log(maxNum,maxStr);
+	</script>
+</body>
+</html>

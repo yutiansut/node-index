@@ -1,0 +1,26 @@
+.doTrader{
+	width: 100%;
+	height: 100%;
+	background: #191a22;
+}
+.doTrader span {
+	width: 6.7rem;
+	margin-left: 1.58rem;
+	font: 500  0.52rem/1.12rem  "Microsoft YaHei";
+	color: #fff;
+	text-align: center;
+}
+.doTrader i {
+	width: 0.52rem;
+	height: 0.52rem;
+	background: url('./img/shuaxin.png') no-repeat;
+	background-size: 0.52rem 0.52rem; 
+	margin: 0.36rem 0.38rem 0 0; 
+}
+.doTrader b {
+	width: 0.52rem;
+	height: 0.52rem;
+	background: url('./img/caidan.png') no-repeat;
+	background-size: 0.52rem 0.52rem; 
+	margin-top: 0.36rem; 
+}

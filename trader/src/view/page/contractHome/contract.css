@@ -1,0 +1,168 @@
+.home{
+	width: 100%;
+	height: 100%;
+	background: #191a22;
+	overflow: hidden;
+	position: relative;
+}
+.homeHead{
+	width: 100%;	
+	font: 500  0.52rem/1.12rem  "Microsoft YaHei";
+	color: #fff;
+	text-align: center;	
+	position: relative;
+	letter-spacing:0.08rem;
+}
+.homeHead i{
+	position: absolute;
+	top: 0.31rem;
+	right: 0.66rem;
+	width: 0.5rem;
+	height: 0.5rem;
+	background: url('img/sousuo.png') no-repeat;
+	background-size: 0.5rem 0.5rem; 
+}
+.sc{
+	width: 100%;
+	background: #20212a;
+}
+.sw{
+	width: 10.36rem;
+	border-bottom: 0.02rem solid #1b1b23;
+	margin-left: 0.22rem;
+}
+.ss{
+	width: 16%;	
+	font: 500  0.38rem/1.08rem  "Microsoft YaHei";
+	color: #fff;
+	text-align: center;
+	margin-left: 2%;
+	margin-right: 2%;
+}
+.active{
+	width: 16%;
+	margin-left: 2%;
+	margin-right: 2%;		
+	font: 500  0.38rem/1.08rem  "Microsoft YaHei";
+	color: #fff;
+	border-bottom: 0.08rem solid  #f8cc00;
+	text-align: center;
+}
+.s{
+	width: 8%;	
+	height: 100%;
+	font: 500  0.38rem/1.08rem  "Microsoft YaHei";
+	color: #fff;
+	text-align: center;
+}
+.actives{
+	width: 8%;	
+	height: 100%;
+	font: 500  0.38rem/1.08rem  "Microsoft YaHei";
+	color: #f8cc00;
+	text-align: center;
+}
+.optional{
+	width: 10.36rem;
+	height: 7%;
+	padding-top: 0.3rem;
+	border-bottom: 0.02rem solid #1b1b23;
+	margin-left: 0.22rem;
+	position: relative;
+}
+.searchStock{
+	width: 9.26rem;
+	padding-left: 1.1rem;
+	border: 0.02rem solid #1b1b23;
+	background: #191a22;
+	font: 500  0.38rem/0.92rem  "Microsoft YaHei";
+	color: #fff;
+	border-radius: 0.15rem;
+}
+.optional i{
+	position: absolute;
+	width:0.5rem ;
+	height:0.5rem ;
+	background: url('./img/sousuo.png') no-repeat;
+	background-size: 0.5rem 0.5rem; 
+	top: 0.5rem;
+	left: 0.2rem;
+}
+.optional b{
+	position: absolute;
+	width:0.1rem ;
+	height:0.86rem ;
+	background:#3f74f6; 
+	top: 0.35rem;
+	left: 0.8rem;
+	border-radius: 0.3rem;
+}
+.showClosed{
+	width: 0.34rem;
+	height: 0.35rem;
+	background: url('./img/guanbi.png') no-repeat;
+	background-size: 0.34rem 0.35rem;
+	position: absolute;
+	top: 0.6rem;
+	right: 0.4rem;
+}
+.hideClosed{
+	display: none;
+}
+.showList{
+	width: 100%;
+	height: 67.3%;
+	background:#191a22;
+	position: absolute;
+	top: 25%;
+	left: 0;
+	z-index: 19;
+	overflow: hidden;
+	overflow-y: auto;
+}
+.showList::-webkit-scrollbar {
+  display: none;
+}
+.showList ul{
+	width: 10.36rem;
+	position: absolute;
+	padding-top: 0.4rem;
+	z-index: 11;
+	top: 0rem;
+	left: 0.22rem;
+	background:#20212a; 
+}
+.showList li{
+	margin-bottom: 0.2rem;
+}
+.showList span{
+	font: 500  0.38rem/0.8rem  "Microsoft YaHei";
+	color: #fff;
+}
+.showList i{
+	margin-top: 0.2rem;
+	margin-right: 0.2rem;
+	font: 400  0.15rem/0.30rem  "Microsoft YaHei";
+	background: #3b7fd9;
+	color: #fff;
+	padding: 0 0.08rem;
+}
+.showList .checkedOk{
+	margin-top: 0.2rem;
+	margin-right: 0.2rem;
+	width: 0.41rem;
+	height: 0.36rem;
+	background: url('./img/xin2.png') no-repeat;
+	background-size: 0.41rem 0.36rem; 
+}
+.showList .checkedON{
+	margin-top: 0.2rem;
+	margin-right: 0.2rem;
+	width: 0.41rem;
+	height: 0.36rem;
+	background: url('./img/xin1.png') no-repeat;
+	background-size: 0.41rem 0.36rem; 
+}
+.showList .hideList{
+	display: none;
+}

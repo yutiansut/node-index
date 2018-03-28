@@ -1,0 +1,78 @@
+.plot_first{
+	width: 100%;
+	height: 100%;
+    background: #191a22;
+    position: relative;
+}
+.personInfor{
+	width: 9.82rem;
+	margin: 0 auto;
+	height: 36.5%;
+}
+.putName{
+	width: 100%;
+	height: 1.18rem;
+	border: 0.03rem solid #303038;
+	border-radius: 0.15rem;
+	margin-bottom: 0.4rem;
+	font: 500  0.38rem/1.18rem  "Microsoft YaHei"; 
+	color: #f6f6f6;
+}
+.name{
+	margin: 0 0.3rem 0 0.46rem;
+	font: 500  0.38rem/1.18rem  "Microsoft YaHei"; 
+	color: #f6f6f6;
+}
+.nameInput{
+	width: 6.94rem;
+	height: 1.18rem;
+	background: none;
+	border: none;
+	color: #f6f6f6;
+	font: 500  0.46rem/1.28rem  "Microsoft YaHei";
+}
+.year{
+	width: 2.07rem;
+	height: 1.18rem;
+	text-align: center;
+	margin-left: 0.5rem;
+}
+.month{
+	height: 1.18rem;
+	width: 2.07rem;
+	text-align: center;
+}
+.day{
+	height: 1.18rem;
+	width: 2.07rem;
+	text-align: center;
+}
+.clickSJ{
+	margin: 0.48rem 0 0 1.45rem;
+	width: 0.34rem;
+	height: 0.18rem;
+	background: url('../plot/jiantou.png') no-repeat;
+	background-size: 0.34rem 0.18rem;
+}
+.dataPicker .default{
+	width: 100%;
+	height: 3.90rem;
+	background: #191a22;
+}
+.goOnOpenPlotBtn{
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: #f8cc00;
+	color: #191a22;
+	font: 500  0.44rem/1.04rem  "Microsoft YaHei";
+}
+.isOkDate{
+	width: 100%;
+	height: 1.18rem;
+	margin-bottom: 0.1rem;
+	font: 500  0.38rem/1.18rem  "Microsoft YaHei"; 
+	color: #f6f6f6;
+}

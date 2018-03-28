@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function deepcopy(source) {
+			if (source && typeof source !== "object") {
+				return source;
+			}
+			var targetObj = source.constructor === Array ? [] : {};
+			for(var key in source){
+				if (source.hasOwnProperty(key)) {
+					if (typeof source[key]==="object") {
+						targetObj[key]=(source[key].construtor ===Array) ? [] : {};
+						deepcopy(targetObj[key],source[key]);
+					}else {
+						targetObj[key] = source[key]
+					}
+				}
+ 			}
+ 			return targetObj;
+		}
+		var obj = deepcopy("北京");
+		console.log(obj);
+
+		function deepClone(initialObj, finalObj) {
+		    return _deepClone(initialObj, finalObj, {
+		    k: [],
+		    v: []
+		    });
+		}
+		function _deepClone(initialObj, finalObj, conflict) {
+		    var i;
+		    if (initialObj && typeof initialObj === "object" && (i = [Object, Array].indexOf(initialObj.constructor)) != -1){
+			    if (!finalObj) {
+			        finalObj = initialObj.constructor === Array ? [] : {};
+			    }
+			    if (conflict) {
+			        i = conflict.k.indexOf(initialObj);
+			        if (i != -1) {
+			        	return conflict.v[i];
+			        }
+			        	conflict.k.push(initialObj);
+			        	conflict.v.push(finalObj);
+			    	}
+				    for (var key in initialObj) {
+				        finalObj[key] = _deepClone(initialObj[key], finalObj[key], conflict);
+				    }
+				    return finalObj;
+			    }
+			    return initialObj;
+			}
+		var y = [1,2,3];
+		var f = deepClone(y);
+		f.push(4);
+		console.log(f);
+		console.log(y);
+	</script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// function log(x,y=1) {
+		// 	console.log(x + ":" + y);
+		// }
+		// log(0);
+		// log(0,0);
+		// log(0,"")
+		// function err (c) {
+		// 	let c = 1;// c已经被申明  就不能再被当做变量来赋值 
+		// 	const c = 2;//
+		// }
+		// err();
+		// function foo ({x,y=5}) {
+		// 	console.log(x,y);
+		// }
+		// foo({});
+		// foo({x:1});
+		// foo({x:5,y:1});
+		// foo();
+
+		function m1({x=0,y=0}={}) {
+			console.log(x,y);
+		}
+		function m2({x,y}={x:0,y:0}) {
+			console.log(x,y);
+		}
+		m1();
+		m2({x:3,y:8});
+
+		function sum(...values) {
+			let zero = 0;
+			for (var val of values) {
+				zero += val;
+			}
+			return zero;
+		}
+		console.log(sum(2,3,4,5));
+
+		function pushArr(a,...items) {
+			items.forEach(function(item){
+				a.push(item);
+			});
+			return a;
+		}
+		let arr = [];
+		let b = [1,2,3]
+		console.log(pushArr(arr,...b));
+
+		let v = Math.max(...[1,2,7]);
+		console.log(v);
+		let arr1 = [1,2,4];
+		let arr2 = [5,6,7];
+		console.log([...arr1,...arr2]);
+	</script>
+</body>
+</html>

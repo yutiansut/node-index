@@ -1,0 +1,76 @@
+.bandCard{
+	width: 100%;
+}
+.putName1{
+	width: 9.76rem;
+	height: 1.18rem;
+	border: 0.03rem solid #303038;
+	border-radius: 0.15rem;
+	margin-bottom: 0.4rem;
+	margin-left: 0.44rem;
+	font: 500  0.38rem/1.18rem  "Microsoft YaHei"; 
+	color: #f6f6f6;
+}
+.name{
+	margin: 0 0.3rem 0 0.46rem;
+	font: 500  0.38rem/1.18rem  "Microsoft YaHei"; 
+	color: #f6f6f6;
+}
+.nameInput{
+	width: 6.94rem;
+	height: 1.18rem;
+	background: none;
+	border: none;
+	color: #f6f6f6;
+	font: 500  0.46rem/1.28rem  "Microsoft YaHei";
+}
+.verfiCodeInput1{
+	width: 5.66rem;
+	height: 1.18rem;
+	border: 0.03rem solid #303038;
+	border-radius: 0.15rem;
+	margin-bottom: 0.4rem;
+	margin-left: 0.44rem;
+	font: 500  0.38rem/1.18rem  "Microsoft YaHei"; 
+	color: #f6f6f6;
+}
+.difCountry1{
+	margin: 0 0.3rem 0 0.46rem;
+	font: 500  0.38rem/1.18rem  "Microsoft YaHei"; 
+	color: #f6f6f6;
+}
+.codeNum1{
+	width: 3.3rem;
+	height: 1.18rem;
+	background: none;
+	border: none;
+	color: #f6f6f6;
+	font: 500  0.46rem/1.28rem  "Microsoft YaHei";
+}
+.codeTime1{
+	margin-left: 0.5rem;
+	text-align: center;
+	width: 3.3rem;
+	height: 1.18rem;
+	color: #f8cc00;
+	border: 0.03rem solid #f8cc00;
+	border-radius: 0.15rem;
+	font: 500  0.46rem/1.28rem  "Microsoft YaHei";
+}
+.codeTime1Y{
+	margin-left: 0.5rem;
+	text-align: center;
+	width: 3.3rem;
+	height: 1.18rem;
+	color: #acacac;
+	border: 0.03rem solid #303038;
+	border-radius: 0.15rem;
+	font: 500  0.46rem/1.28rem  "Microsoft YaHei";
+}
+.ask{
+	width: 9.7rem;
+	margin-top: 0.2rem;
+	margin-left: 0.65rem;
+	font: 500  0.34rem/0.6rem  "Microsoft YaHei";
+	color: #acacac;
+}

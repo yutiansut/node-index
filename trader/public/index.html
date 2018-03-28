@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#000000">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no, maximum-scale=1,minimum-scale=1">
+    <meta name="renderer" content="webkit|ie-comp|ie-stand">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    <meta name="full-screen" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="HandheldFriendly" content="true">
+    <meta http-equiv="pragma" content="no-cache">
+    <meta http-equiv="x-ua-compitable" content="ie=edge">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json">
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">
+    <title>Kings</title>
+    <script>
+      ;(function(){
+        function setFont(){
+            document.documentElement.style.fontSize=document.documentElement.clientWidth/10.8+'px';
+        }
+        setFont();
+        window.addEventListener('resize',setFont,false);
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    
+  </body>
+</html>

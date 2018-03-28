@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com">
+<meta name="copyright" content="智能社 - zhinengshe.com">
+<title>智能社 - www.zhinengshe.com</title>
+<style>
+	#box .on{ background:red;}
+	#box div{width:200px;height:200px; background:#ccc;
+	display:none;}
+</style>
+<script>
+	function Tab(id){
+		//属性	
+		this.oBox = document.getElementById('box');	
+		this.aBtn = this.oBox.getElementsByTagName('input');
+		this.aDiv = this.oBox.getElementsByTagName('div');
+		this.iNow = 0;
+		this.init();
+		
+	}
+	//方法
+	Tab.prototype.init =  function(){
+		var _this = this;
+		for(var i = 0;i<this.aBtn.length;i++){
+			this.aBtn[i].index = i;
+			this.aBtn[i].onclick = function(){
+				_this.iNow = this.index;
+				_this.tab();
+			};
+		}
+	};
+	
+	Tab.prototype.tab = function(){
+		for(var i = 0;i<this.aBtn.length;i++){
+			this.aBtn[i].className = '';
+			this.aDiv[i].style.display = 'none';
+		}
+		this.aBtn[this.iNow].className = 'on';
+		this.aDiv[this.iNow].style.display = 'block';
+		
+	};
+	window.onload = function(){
+		new Tab('box');
+	};
+</script>
+</head>
+
+<body>
+	<div id="box">
+    	<input type="button" value="aaa" class="on">
+    	<input type="button" value="bbb">
+    	<input type="button" value="ccc">
+        <div style="display:block;">aaaa</div>
+        <div>bbbb</div>
+        <div>ccccv</div>
+    </div>
+</body>
+</html>

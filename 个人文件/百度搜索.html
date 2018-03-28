@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+
+    </style>
+    <script src="jquery-1.7.2.js"></script>
+    <script>
+        $(function(){
+            var oTxt=$('input');
+            var oDiv=$('div');
+            var url='https://sp0.baidu.com/5a1Fazu8AA54nxGko9WTAnF6hhy/su';
+            oTxt.on('keyup',function(){
+                $.ajax({
+                    url:url,
+                    data:{
+                        wd:oTxt.val()
+                    },
+                    dataType:'jsonp',
+                    jsonp:'cb',
+                    cache:false,
+                    success:function(json){
+                       var str=JSON.stringify(json.s);
+                       oDiv.html(str);
+                    },
+                    error:function(){
+                        alert('no');
+                    }
+                });
+            });
+
+        });
+    </script>
+</head>
+<body>
+<input type="text"/>
+<div></div>
+</body>
+</html>

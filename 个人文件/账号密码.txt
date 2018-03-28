@@ -1,0 +1,126 @@
+企业邮箱：lixuekui@dingjintz.com   密码：Abc456
+
+163邮箱 lixuekui1@163.com
+密码：lixuekui2375619@
+
+Apple ID 834469228@qq.com
+密码：Lixuekui2375619@
+
+
+teambition账号：lixuekui@dingjintz.com   密码：lxk11153
+
+文华财经账号：1264300072  密码：788711
+
+文华财经股票账户：1060000036 密码：512734
+
+google账号：13520350585 lixuekui1@163.com   密码：lxk11153@
+
+
+博客园：lixuekui11153 834469228@qq.com  密码：lxk11153@
+
+跟我赢模拟账号 MNFW003  密码：123456
+
+github:lixuekui11153  834469228@qq.com   密码：lxk111537
+
+
+谷歌账号：8613520350585 （lxk11153@gmail.com）  密码:lxk11153@
+
+百度网盘账号：feini11153  密码：lxk11153;
+highstock论坛：账号 lixuekui1@163.com   密码：lxk11153
+
+sublime使用方法  ：
+
+① CTRL+SHIFT+P 打开
+
+②在小窗口  先输入 install package 回车
+
+③上②回车后 又会弹出一窗口  然后输入你想下载的插件  然后回车确定  即可下载。
+
+④检验是否安装成功：点击preferences-再点击 package settings  查看是不是在这个列表里面。
+
+
+svn:lixuekui 密码：123456.
+
+同花顺：yk_426807845  密码：lxk11153
+
+富途牛牛 ：7519146
+
+本地路径：redis.ip=127.0.0.1;
+<!-- <property name="password" value="${redis.pwd}" /> -->
+
+资料：
+一，hammer.js  手机端拖拽。
+二，数据处理：lodash.js。http://lodashjs.com/docs/   http://lodashjs.com/
+三，pc与手机适配：bootstrap。 
+四，后台管理：jQuery easyUI。
+五，①默认加载CL美原油数据 先websocket加载历史数据再画分时图--再实时画图，此时需要把数据存在一些全局定义的数组里面，然后存在先前写好的三维数组里面，
+并且把三维数组储存的数据存在本地localStorage,还需要存储合约类型和数据类型（CL 5M0）。
+②用户在一小时之内再次请求数据时 先判断前后访问的时间差如果访问时间超过一个小时的话重新把本地数据清除 再websocket请求新的数据
+如果不超过一个小时的话，需要判本地数组里面最好一个数据的时间跟现在系统时间的差值去计算差多少数据 然后websocket请求对应的数据个数，
+并添加到画图的数组里面 此时本地存储的数据也就失去了意义 即现在清空三维数组 再把全局画图的数据存放在三维数组里面，再存储在本地。
+由于15k和30k数据的特殊性 请求数据的时候不受个数的限制  会把所有数据请求过来  不管你请求的个数是多少。不需要本地存储 没有存储的意义（暂时是
+存储在了本地，以后可能要请求更多的昨日数据），所以页面加载的时候就把本地缓存清除了  但是会存在画图数组数据重复的情况（统一的策略是根据时间差请求对应缺少的数据，但是他们会发所有数据 所有重复），即画图的时候要判断个数多于的数据删除。
+③不同合约在切换的时候就把不同合约的名称存储在了本地（CL）,然后结合数据类型作为判断本地是不是有此缓存的依据。但是每个图必须数据请求过来展示在页面才会切换下一个合约，根据历史数据过来的标志位作为一次请求的结束，然后在此message里面画图（画图的事件驱动），所以点击按钮的时候必须请求到数据才能画图，但是用户切换太快，前后事件不够请求一个数据，所以需要人为主动去请求一个数据，但是此时情况需要特殊处理  请求来的数据不能添加到画图数组里面（用标志位来判断;
+④不同类型在切换的时候就把不同类型的名称存储在了本地（1M）,然后结合本地合约类型作为判断本地是不是有此缓存的依据。但是每个图必须数据请求过来展示在页面才会切换下一个类型，根据历史数据过来的标志位作为一次请求的结束，然后在此message里面画图（画图的事件驱动），所以点击按钮的时候必须请求到数据才能画图，但是用户切换太快，前后事件不够请求一个数据，所以需要人为主动去请求一个数据，但是此时情况需要特殊处理  请求来的数据不能添加到画图数组里面（用标志位来判断;
+⑤由于恒指的特殊性（一天3段），对应的做了一下处理：分时图利用highstock插件截取固定的时间段，  k线图请求的个数有昨天的数据 由于在大框架里面添加的 恒指（大框架23小时，并且画图为了连续性用的是利用时间计算的时间戳而不是数据自带的时间戳），即展示的k线跟美原油数据数量一直，但是点击k线展现的数据时间跟实际的是不一致的，需要把实际的时间存储下来，当画图的时候用的是认为计算的时候，展示的时候替换成数据带过来的时间，做到一一对应。  恒指时间段的问题  在代码里判断不同时间段提示休市（目前的休市是根据当日的时间计算出来的---需要后滩传值，免得以后页面频繁修改--主要是夏令时和冬令时）。
+
+
+六，①苹果手机 input textarea  disable  会把改变字体的透明度 
+解决：	#remark{
+	-webkit-text-fill-color:?rgba(255,?255,?255,?1);
+	
+	-webkit-opacity:?1;
+	
+	opacity:1;
+}
+② 微信浏览器苹果手机 audio 不会自动播放下一个
+解决：
+function playAudio(audio) {
+    
+    if (window.WeixinJSBridge) {
+        WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+            audio.play();
+        }, false);
+    } else {
+        document.addEventListener("WeixinJSBridgeReady", function () {
+            WeixinJSBridge.invoke('getNetworkType', {}, function (e) {
+                audio.play();
+            });
+        }, false);
+    }
+    audio.play();
+   
+    return false;
+}
+③ 微信浏览器  window.location.href失效。
+ 解决：
+ if (isWeiXin()) {
+
+        var hr = window.location.href;
+
+        window.location.href = hr + "?t=" + new Date().getTime();
+
+    } else {
+
+        window.location.reload();
+    }
+ ④ 苹果手机微信浏览器  input标签 只能输入数字数字失效  。
+ 解决：type=number  type=tel
+
+ ⑤苹果手机微信浏览器刷新页面获取的页面高度会不一样
+ 解决：微信浏览器在打开的时候 工具栏也是第一次加载  但是浏览器加载过后  工具栏已经存在就不会再加载 所以前后有差距
+ $(document).on('WeixinJSBridgeReady', function () {
+ 
+    window.WeixinJSBridge.call('hideToolbar');//调用这句会隐藏工具栏。但是这个方法也需要时间。因此你最好延迟几十毫秒，再去获取以下高度。这时候应该才是最终的。
+
+  or 或者  window.WeixinJSBridge.call('showToolbar');//调用这句会强制先显示工具栏。但是这个方法也需要时间。因此你最好延迟几十毫秒，再去获取以下高度。这时候应该才是最终的。
+});
+
+⑥网址正则表达；
+var re=/^[a-z]+:\/\/[0-9.]+(:8000\/)(drwa|head|mall|news|sign|task|tool|web|website)[a-z0-9_\-\/.%]+$/g;
+var a="http://123.206.62.242:8000/news/2017/05/news_1494478164366.png";
+if(re.test(a)){
+
+    alert(1);
+    
+}

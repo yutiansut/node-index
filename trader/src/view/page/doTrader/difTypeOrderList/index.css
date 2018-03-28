@@ -1,0 +1,131 @@
+.difOrderList{
+	width: 100%;
+	height: 45.8%;
+}
+.difOrderListTop{
+	width: 100%;
+	font: 400  0.32rem/0.76rem  "Microsoft YaHei";
+	color: #fff;
+	text-align: center;
+	background: #20212a;
+}
+.difOrderListTop li{
+	width:25%;
+}
+.difOrderListTop .colTY{
+	color: #d7b20a;
+}
+.difOrderListPro{
+	width: 100%;
+	font: 400  0.3rem/0.64rem  "Microsoft YaHei";
+	color: #acacac;
+	text-align: center;
+	background: #353641;
+}
+.difOrderListPro li{
+	width:20%;
+}
+.allListZoomF{
+	width: 100%;
+	height: 88.5%;
+	position: relative;
+	overflow: hidden;
+    overflow-y: auto;
+}
+.allListZoomF::-webkit-scrollbar {
+  display: none;
+}
+.allListZoom{
+	position: absolute;
+	left: 0.2rem;
+	top: 0rem;
+	width: 10.4rem;
+	background: #20212a;
+	font: 400  0.36rem/1.06rem  "Microsoft YaHei";
+	color: #acacac;
+	text-align: center;
+}
+.allListZoom li{
+	width: 100%;
+	border-bottom: 0.02rem solid #000;
+	display: -webkit-flex;
+    display: flex;
+}
+.allListZoom .liCol{
+	width: 100%;
+	border-bottom: 0.02rem solid #000;
+	background: #774b03;
+}
+.allListZoom a{
+	width: 20%;
+}
+.allListZoom .siglelistType{
+	color: #fe0042;
+}
+.allListZoom .siglelistBlNum{
+	color: #0cff00;
+}
+.totalNum{
+	width: 9.9rem;
+	font: 400  0.36rem/1.1rem  "Microsoft YaHei";
+	color: #fff;
+	padding-left: 0.7rem;
+	background: #20212a;
+	position: absolute;
+}
+.allClosedBtn{
+	width: 2.50rem;
+	height: 0.85rem;
+	background:#ff4c4c;
+	position: fixed;
+	bottom: 1.5rem;
+	border-radius: 0.25rem;
+	left: 50%;
+	margin-left: -1.25rem;
+	display: none;
+}
+.allClosedBtn1{
+	width: 2.50rem;
+	height: 0.85rem;
+	background:#ff4c4c;
+	position: fixed;
+	bottom: 1.5rem;
+	border-radius: 0.25rem;
+	left: 50%;
+	margin-left: -1.25rem;
+	display: block;
+	font: 400  0.36rem/0.85rem  "Microsoft YaHei";
+	color: #fff;
+	text-align: center;
+}
+.Backhand{
+	width: 10.8rem;
+	height: 0.85rem;
+	position: fixed;
+	bottom: 1.5rem;
+	left:0;
+	display: none;
+}
+.Bshow{
+	display: block;
+}
+.Backhand b{
+	width: 2.50rem;
+	height: 0.85rem;
+	background:#ff4c4c;
+	border-radius: 0.25rem;
+	font: 400  0.36rem/0.85rem  "Microsoft YaHei";
+	color: #fff;
+	text-align: center;
+	margin: 0 2.76rem 0 1.46rem;
+}
+.Backhand i{
+	width: 2.50rem;
+	height: 0.85rem;
+	background:#3dcc85;
+	border-radius: 0.25rem;
+	font: 400  0.36rem/0.85rem  "Microsoft YaHei";
+	color: #fff;
+	text-align: center;
+	margin: 0;
+}

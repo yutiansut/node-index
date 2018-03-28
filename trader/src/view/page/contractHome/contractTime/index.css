@@ -1,0 +1,185 @@
+/* 行情图头部展示合约名字*/
+.contractTime{
+	width: 100%;
+	height: 100%;
+	background: #191a22;
+	position: absolute;
+	overflow: hidden;
+}
+.contractHead{
+	width: 9.86rem;
+	height: 1rem;
+	padding-left: 0.94rem;
+}
+.contractHead span{
+	width: 8.98rem;
+	height: 1rem;
+	text-align: center;
+	font: 600  0.48rem/1rem  "Microsoft YaHei"; 
+	color: #fff;
+}
+.contractHead .back{
+	width: 0.28rem;
+	height: 0.47rem;
+	background: url('img/fanhui.png')   no-repeat;
+	background-size: 0.28rem 0.47rem; 
+	margin-top: 0.3rem;
+	font: 600  0.38rem/0.43rem  "Microsoft YaHei"; 
+	color: #fff;
+}
+.contractHead .otherList{
+	width: 0.49rem;
+	height: 0.43rem;
+	background: url('img/1.png')  center no-repeat;
+	background-size: 0.49rem 0.43rem; 
+	margin-top: 0.24rem;
+	font: 600  0.38rem/0.43rem  "Microsoft YaHei"; 
+	color: #fff;
+}
+/* 合约行情切换按钮列表 */
+.indicatorsList{
+	width: 100%;
+	height: 0.82rem;
+	margin-bottom: 0.02rem;
+	background: #20212a;
+}
+.indicatorsList li{
+	width: 1.8rem;
+	text-align: center;
+	font: 500  0.28rem/0.82rem  "Microsoft YaHei"; 
+	color: #f7f7f6;
+}
+.indicatorsList .indicatorsTime{
+	width: 1.6rem;
+}
+.indicatorsListColor{
+	color: #f8cc00;
+}
+.indicatorsKPoin span{
+	width: 1.25rem;
+	text-align: right;
+}
+.triangleTop{
+	width:0;
+	height:0;
+	border-width:0.16rem 0.16rem 0;
+	border-style:solid;
+	border-color:#acacac transparent transparent ;
+	margin-top: 0.32rem;
+	margin-left: 0.12rem;
+}
+/* K线合约行情分钟切换列表*/
+.minuteKList{
+	width: 1.62rem;
+	height: 5.66rem;
+	background: url('img/xiala.png') no-repeat;
+	background-size: 1.62rem 5.66rem; 
+	position: absolute;
+	top: 1.6rem;
+	right: 0.2rem;
+	z-index: 2;
+	display: none;
+}
+.minuteKList li{
+	width: 100%;
+	height: 20%;
+	font: 500  0.28rem/1.13rem  "Microsoft YaHei"; 
+	color: #f7f7f6;
+	text-align: center;
+}
+.show{
+	display: block;
+}
+/* 合约行情图展示*/
+#container{
+	width: 100%;
+	height: 48%;
+	background: #20212a;
+	
+}
+.lastPrice{
+	width: 100%;
+	height: 10%;
+	background: #20212a;
+	margin-bottom: 0.2rem;
+	padding-top: 0.3rem;
+}
+.lastPriceLeft{
+	width: 6.54rem;
+	padding-left: 0.38rem;
+	font: 500  0.33rem/0.73rem  "Microsoft YaHei";
+	color: #f7f7f6; 
+}
+.lastPriceLeft div{
+	
+}
+.lastPriceLeft b{
+	margin: 0 1.98rem 0 0.18rem;
+	color: #0cff00;
+
+}
+.lastPriceRight{
+	width: 3.88rem;
+	height: 100%;
+	font: 500   0.35rem/0.61rem  "Microsoft YaHei";
+	color: #4affa5;
+	text-align: center;
+}
+.bigLast{
+
+	font: 600  0.74rem/0.74rem  "Microsoft YaHei";
+	text-align: center;
+}
+.news{
+	width: 100%;
+	height: 20%;
+	background: #20212a;
+}
+.iconList{
+	width: 100%;
+	height: 8%;
+}
+.iconList li{
+	width: 0.7rem;
+	height: 1.1rem;
+	margin-top: 0.2rem;
+}
+.iconList .handicapBtn{
+	background: url('img/pankou.png') no-repeat;
+	background-size: 0.7rem 1.1rem; 
+}
+.iconList .shareBtn{
+	background: url('img/fenxiang.png') no-repeat;
+	background-size: 0.7rem 1.1rem; 
+}
+.iconList .noticeBtn{
+	background: url('img/tixing.png') no-repeat;
+	background-size: 0.7rem 1.1rem; 
+}
+.iconList .ownChoiceBtn{
+	background: url('img/zixuan.png') no-repeat;
+	background-size: 0.7rem 1.1rem; 
+}
+.marL{
+	margin-left: 0.71rem;
+}
+.marL1{
+	margin-left: 1.48rem;
+}
+.iconList .iconTraderBtn{
+	width: 1.15rem;
+	height: 1.15rem;
+	background: url('img/jiaoyi.png') no-repeat;
+	background-size: 1.15rem 1.15rem;
+	margin: 0.1rem 1.24rem 0 1.24rem;
+}
+.changeBig{
+	width: 0.63rem;
+	height: 0.63rem;
+	background: url('img/zhankai.png') no-repeat;
+	background-size: 0.63rem 0.63rem; 
+	position: absolute;
+	z-index: 3;
+	top: 39%;
+	left: 10%;
+}

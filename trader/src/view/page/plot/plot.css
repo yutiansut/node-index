@@ -1,0 +1,135 @@
+.plotRute{
+	width: 100%;
+	height: 100%;
+	background: #20212a;
+}
+.hB{
+	height: 5.72%;
+	background: #191a22;
+}
+.poltProcess{
+	width: 10.3rem;
+	padding-left: 0.5rem;
+	height: 1.66rem;
+	padding-top: 0.22rem;
+	background: #20212a;
+	border-bottom: 0.08rem solid #191a22;
+}
+.openAccount{
+	width: 0.8rem;
+}
+.openAccount p{
+	text-align: center;
+	width: 0.8rem;
+	font: 500  0.25rem/0.4rem  "Microsoft YaHei";
+	color: #fff;
+}
+.openAccount div{
+	width: 0.8rem;
+	height: 0.8rem;
+	border-radius: 50%;
+	background: #413b35;
+	position: relative;
+}
+.openAccount div i{
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background: #f8cc00;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -0.25rem;
+	margin-top: -0.25rem;
+	z-index: 2;
+}
+.openAccount div span{
+	width: 0.5rem;
+	height: 0.5rem;
+	border-radius: 50%;
+	background: #494756;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -0.25rem;
+	margin-top: -0.25rem;
+}
+.poltProcessLine{
+	width: 3.7rem;
+	height: 0.04rem;
+	background: #333;
+	position: relative;
+	margin-top: 0.7rem;
+}
+.poltProcessLine b{
+	width: 1.7rem;
+	height: 0.04rem;
+	background: #f8cc00;
+	position: absolute;
+
+}
+.plotCaption{
+	width: 100%;
+	background: #20212a;
+}
+.plotCaption ul{
+	width: 10.36rem;
+	margin-left: 0.22rem;
+	
+}
+.plotCaption li{
+	width: 9.66rem;
+	padding-left: 0.7rem;
+	border-bottom: 0.02rem solid #1b1b23; 
+}
+.plotCaption i{
+	width: 0.8rem;
+	height: 0.8rem;
+	background: url('./plot/5.png') no-repeat;
+	background-size: 0.8rem 0.8rem; 
+	margin-right: 0.56rem;
+	margin-top: 0.49rem;
+}
+.plotCaption .buildRelatiopn{
+	background: url('./plot/4.png') no-repeat;
+	background-size: 0.8rem 0.8rem; 
+}
+.plotCaption .trust{
+	background: url('./plot/3.png') no-repeat;
+	background-size: 0.8rem 0.8rem; 
+}
+.plotCaption span{
+	font: 500  0.36rem/1.78rem  "Microsoft YaHei";
+	color: #fff;
+}
+.openAccountBtnY{
+	display: block;
+	width: 100%;
+	font: 600  0.42rem/1.04rem  "Microsoft YaHei";
+	color: #191a22;
+	background: #f8cc00;
+	text-align: center;
+}
+.openAccountBtn{
+	display: block;
+	width: 100%;
+	font: 600  0.42rem/1.04rem  "Microsoft YaHei";
+	color: #191a22;
+	background: #494756;
+	text-align: center;
+}
+.openAccountNotice{
+	width: 100%;
+	font: 600  0.32rem/1.12rem  "Microsoft YaHei";
+	color: #acacac;
+	background: #20212a;
+	text-align: center;
+}
+.openAccountIsOk{
+	width: 100%;
+	font: 600  0.33rem/5.57rem  "Microsoft YaHei";
+	color: #acacac;
+	background: #20212a;
+	text-align: center;
+	text-decoration: underline;
+}

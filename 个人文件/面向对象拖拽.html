@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="author" content="智能社 - zhinengshe.com">
+<meta name="copyright" content="智能社 - zhinengshe.com">
+<title>智能社 - www.zhinengshe.com</title>
+<style>
+*{margin:0; padding:0;}
+#box{width:200px; height:200px;background:#f90; position:absolute; top:0; left:0;}
+</style>
+<script>
+	function Drag(id){
+	//属性
+		this.oBox = document.getElementById(id);
+		this.disX = 0;
+		this.disY = 0;
+		this.init();
+	}
+	//方法
+	Drag.prototype.init = function(){
+		var _this = this;
+		this.oBox.onmousedown=function(ev){
+			var oEvent = ev||event;
+			_this.fnDown(oEvent);
+			_this.oBox.setCapture&&_this.oBox.setCapture();
+			return false;
+		};
+	};
+	//按下
+	Drag.prototype.fnDown = function(ev){
+		var _this = this;
+		this.disX = ev.clientX-this.oBox.offsetLeft;
+		this.disY = ev.clientY-this.oBox.offsetTop;
+		document.onmousemove = function(ev){
+			var oEvent = ev||event;
+			_this.fnMove(oEvent);
+		};
+		document.onmouseup = function(){
+			_this.fnUp();
+		};
+		
+	};
+	//移动
+	Drag.prototype.fnMove = function(ev){
+		this.oBox.style.left=ev.clientX-this.disX+'px';
+		this.oBox.style.top=ev.clientY-this.disY+'px';
+	};
+	//抬起
+	Drag.prototype.fnUp = function(){
+		document.onmousemove=null;
+		document.onmouseup=null;
+		this.oBox.releaseCapture&&this.oBox.releaseCapture();
+	};
+	
+	window.onload = function(){
+		new Drag('box');	
+	};
+</script>
+</head>
+
+<body>
+<div id="box"></div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+.handicap{
+	width: 100%;
+	height: 100%;
+	background: #191a22;
+}
+.handicapNav{
+	width: 100%;
+	height: 90%;
+	background: #20212a;
+	position: relative;
+}
+.handicapNav ul{
+	width: 10.8rem;
+	padding-left: 0.42rem;
+	position: absolute;
+}
+.handicapNav li{
+	width: 100%;
+	border-bottom: 0.03rem solid #191a22;
+	font: 400 0.52rem/1.48rem "Microsoft YaHei";
+    color: #fff;
+}
+.handicapNav span{
+	width: 1.06rem;
+	text-align: center;
+}
+.handicapNav b{
+	width: 2.60rem;
+	height: 1.48rem;
+	margin-left:0.32rem ; 
+	text-align: center;
+	color: #fe0042;
+}
+.handicapNav i{
+	width: 3.43rem;
+	text-align: right;
+}
+.handicapNav .colW{
+    color: #fff;
+}
+
+.handicapNav .colG{
+    color: #0cff00;
+}

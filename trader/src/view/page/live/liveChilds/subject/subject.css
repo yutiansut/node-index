@@ -1,0 +1,24 @@
+.subjectList{
+	position: absolute;
+	width: 10.36rem;
+	margin-left: 0.22rem;
+}
+.subjectList li{
+	width: 100%;
+	border-bottom: 0.02rem solid #1b1b23;
+	font: 500  0.32rem/1.24rem  "Microsoft YaHei";
+	color: #fff;
+}
+.subjectList i{
+	width: 2.9rem;
+	text-align: center;
+	color: #acacac;
+}
+.subjectList b{
+	width: 4.46rem;
+	text-align: center;
+	color: #acacac;
+}
+.subjectList span{
+	margin-left: 0.24rem;
+}

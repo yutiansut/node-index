@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<script src="js/jquery-1.7.2.js"></script>
+<script>
+(function(Jquery){
+	$(function(){
+		var oTxt=$('#txt');
+		var oBtn=$('#btn');
+		var n=parseInt(oTxt.val());
+		oBtn.on('click',function(){
+			var n=parseInt(oTxt.val());//点击事件里获取n。
+			for(var i=0;i<n;i++){
+				for(var j=0;j<=i;j++){
+					document.write('*'+'&nbsp;&nbsp');
+				}
+				document.write('<br>');
+			}
+		});
+		
+	});
+})($);
+</script>
+</head>
+
+<body>
+<input type="text" id="txt">
+<input type="button" id="btn" value="按钮">
+</body>
+</html>

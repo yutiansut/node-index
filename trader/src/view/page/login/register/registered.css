@@ -1,0 +1,126 @@
+.register{
+	width: 100%;
+	height: 100%;
+	background: #20212a;
+}
+.regHead{
+	width: 100%;
+	background: #191a22;
+	font: 500  0.5rem/1.08rem  "Microsoft YaHei"; 
+	color: #fff;
+	text-align: center;
+	position: relative;
+}
+.regHead i{
+	width: 0.28rem;
+	height: 0.47rem;
+	background: url('../img/fanhui.png') no-repeat;
+	background-size: 0.28rem 0.47rem;
+	position: absolute;
+	top: 0.3rem;
+	left: 0.3rem;
+}
+.regLogol{
+	width: 100%;
+	height: 20%;
+	background: url('../img/zhuceicon.png') center no-repeat;
+	background-size: 1.84rem 1.84rem;
+}
+.regInput{
+	width: 10.3rem;
+	padding-left: 0.5rem;
+}
+.regPhNum{
+	width: 9.36rem;
+	padding-left: 0.36rem;
+	background: #353641;
+	border-radius: 0.08rem;
+	border-bottom: 0.03rem solid #282933;
+}
+.difCountry{
+	font: 500  0.32rem/1.28rem  "Microsoft YaHei"; 
+	color: #fff;
+}
+.difCountryChoice{
+	font: 500  0.32rem/1.28rem  "Microsoft YaHei"; 
+	color: #fff;
+	margin: 0 0.2rem 0 0.2rem;
+}
+.telephoneNumber{
+	width: 6.94rem;
+	height: 1.28rem;
+	background: #353641;
+	border: none;
+	color: #fff;
+	font: 400  0.46rem/1.28rem  "Microsoft YaHei"; 
+}
+.difCountryClosed{
+	margin-top: 0.46rem;
+	width: 0.39rem;
+	height: 0.41rem;
+	background: url('../img/guanbi.png') no-repeat;
+	background-size: 0.39rem 0.417rem;
+}
+
+.regplacePh{
+	margin-bottom: 0.84rem;
+	border-radius: 0.08rem;
+	width: 9.36rem;
+	padding-left: 0.36rem;
+	background: #353641;
+}
+.passwordNav{
+	margin-left: 0.66rem;
+	width: 6.94rem;
+	height: 1.28rem;
+	background: #353641;
+	border: none;
+	color: #fff;
+	font: 400  0.46rem/1.28rem  "Microsoft YaHei"; 
+}
+.sureReg{
+	width: 9.72rem;
+	color: #121318;
+	font: 500  0.44rem/1.3rem  "Microsoft YaHei"; 
+	background: #f8cc00;
+	text-align: center;
+	border-radius: 0.1rem;
+}
+.isDisAgree{
+	width: 9.12rem;
+	padding-left:0.6rem; 
+}
+.checkeboxF {
+    background-color: #20212a;
+    width: 0.45rem;
+    height: 0.45rem;
+    border: 0.02rem solid #d2d2d2;
+    border-radius: 0.05rem;
+    margin-top: 0.25rem;
+    margin-right: 0.2rem;
+}
+.checkeboxF input{
+	display: block;
+	margin: 0.05rem;
+	opacity: 0;
+	cursor: pointer;
+	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+	filter: alpha(opacity=0);
+}
+.checkedIs {
+    background-color: #20212a;
+    background-image: url(../img/gouxuan.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.isDisAgree span{
+	font:600 0.38rem/1rem "Microsoft YaHei";
+	color: #fff;
+	margin-right:0.2rem;
+}
+.isDisAgree b{
+	font:600 0.38rem/1rem "Microsoft YaHei";
+	color: #f8cc00;
+}
+

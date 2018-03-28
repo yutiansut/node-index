@@ -1,0 +1,167 @@
+.futuresChangeNum{
+  width: 100%;
+  height: 21.25%;
+  background: #20212a;
+  margin-bottom: 0.15rem;
+}
+.changeNumTop{
+	padding-top:0.2rem ;
+	width: 10.64rem;
+	padding-left: 0.16rem;
+}
+.changeNumTopLeft{
+	width: 5rem;
+	height: 100%;
+	margin-right: 0.4rem;
+}
+.changeNumTopLeftTop{
+	width: 4.9rem;
+	height:0.9rem;
+	border: 0.02rem solid #000;
+	border-radius: 0.12rem;
+	margin-bottom: 0.14rem;
+	background: #191a22;
+}
+.changeNumTopLeftTop i{
+	width: 0.84rem;
+	height:100%;
+	background: url('../img/suo2.png') no-repeat center;
+	background-size: 0.45rem 0.47rem; 
+	margin: 0;
+	border-right: 0.02rem solid #000;
+}
+.changeNumTopLeftTop input{
+	width: 3.06rem;
+	padding-left: 0.18rem;
+	height:100%;
+	margin: 0;
+	font: 500  0.36rem/0.9rem  "Microsoft YaHei";
+	color: #fff;
+	text-align: left;
+	background: none;
+	border: none;
+}
+.changeNumTopLeftTop b{
+	width: 0.5rem;
+	height:100%;
+	background: url('../img/soushuo.png') no-repeat left center;
+	background-size: 0.5rem 0.5rem; 
+	margin: 0;
+}
+.changeNumTopLeftBot{
+	width: 4.9rem;
+	height:0.9rem;
+}
+.changeNumTopLeftBotLeft{
+	height: 100%;
+	width: 1.96rem;
+	border: 0.02rem solid #000;
+	border-radius: 0.12rem;
+	margin-right: 0.04rem;
+	background: #191a22;
+}
+.changeNumTopLeftBotLeft p{
+	width: 0.84rem;
+	font: 500  0.32rem/0.9rem  "Microsoft YaHei";
+	color: #acacac;
+	text-align: center;
+}
+.changeNumTopLeftBotLeft h4{
+	width: 1.12rem;
+	font: 500  0.32rem/0.9rem  "Microsoft YaHei";
+	color: #fff;
+	text-align: center;
+}
+.changeNumTopLeftBotRight{
+	height: 100%;
+	width: 2.78rem;
+	border: 0.02rem solid #000;
+	border-radius: 0.12rem;
+	background: #191a22;
+}
+.changeNumTopLeftBotRight p{
+	width: 0.84rem;
+	font: 500  0.32rem/0.9rem  "Microsoft YaHei";
+	color: #acacac;
+	text-align: center;
+}
+.changeNumTopLeftBotRight h4{
+	width: 1.9rem;
+	font: 500  0.32rem/0.9rem  "Microsoft YaHei";
+	color: #fff;
+	text-align: center;
+}
+
+.changeNumTopRight{
+	width: 5rem;
+	height: 2rem;
+	border: 0.02rem solid #000;
+	border-radius: 0.12rem;
+	background: #191a22;
+	position: relative;
+	overflow: hidden;
+    overflow-y: auto;
+}
+.changeNumTopRight::-webkit-scrollbar {
+  display: none;
+}
+.changeNumTopRight ul{
+	width: 4.64rem;
+	position: absolute;
+	top: 0.15rem;
+	left: 0.15rem;
+}
+.changeNumTopRight li{
+	width: 100%;
+	font: 400  0.34rem/0.64rem  "Microsoft YaHei";
+	color: #acacac;
+}
+.changeNumTopRight li span{
+	width: 0.54rem;
+	font: 400  0.34rem/0.64rem  "Microsoft YaHei";
+	color: #acacac;
+	margin: 0;
+	text-align: left;
+}
+.changeNumTopRight li h3{
+	width: 2rem;
+	text-align: left;
+}
+.changeNumTopRight li strong{
+	width: 2rem;
+	text-align: right;
+}
+.traderBtn{
+	width: 100%;
+	height: 35%;
+	margin-top: 1%;
+}
+.traderBtnLeft{
+	width: 3rem;
+	height: 1.2rem;
+	background: #ff4c4c;
+	border-radius: 0.13rem;
+	margin-left: 1.34rem;
+}
+.traderBtnRight{
+	width: 3rem;
+	height: 1.2rem;
+	background: #3dcc85;
+	border-radius: 0.13rem;
+	margin-left: 1.9rem;
+}
+.buy,.sell{
+	width:2.5rem;
+	margin:0 auto;
+	border-bottom: 0.02rem solid #f6f6f6;
+	text-align: center;
+	font: 400  0.34rem/0.6rem  "Microsoft YaHei";
+	color: #fff;
+}
+.buyName,.sellName{
+	width:2.5rem;
+	margin:0 auto;
+	text-align: center;
+	font: 400  0.34rem/0.6rem  "Microsoft YaHei";
+	color: #fff;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		// let y2k = new Date(Date.UTC(2000,0));
+		// console.log(y2k);
+
+		// let startDate = Date.now(); //== +new Date()
+		// console.log(1)//
+		// let endDate = Date.now(); //== +new Date()
+		// console.log(endDate - startDate);
+
+		// console.log(endDate.valueOf());//返回时间戳
+		// var a = new Date();
+		// console.log(a.getTime());//返回时间戳
+		// console.log(a.setTime(startDate));//返回时间戳
+		// console.log(a.setFullYear(2019));//返回时间戳
+		function sum1(n,tal){
+			if (n===1) return n+tal;
+			return sum1(n-1,n+tal);
+		}
+		let startDate1 = Date.now(); //== +new Date()
+		console.log(sum1(10000,0));
+		let endDate1 = Date.now(); //== +new Date()
+		console.log(endDate1 - startDate1);
+
+		// function sum (n){
+		// 	if (n===1) return 1;
+		// 	return n + sum(n-1);
+		// }
+		// let startDate = Date.now(); //== +new Date()
+		// console.log(sum(10000));
+		// let endDate = Date.now(); //== +new Date()
+		// console.log(endDate - startDate);
+
+		
+	</script>
+</body>
+</html>

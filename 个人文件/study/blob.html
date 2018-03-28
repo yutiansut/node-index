@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>	
+		//下载文件
+  //       var blob = new Blob(["Hello World"]);
+  //       var a = document.createElement("a");
+  //       a.href = window.URL.createObjectURL(blob);
+  //       a.download = "hello-world.txt";
+  //       a.textContent = "Download Hello World!";
+  //       document.body.appendChild(a);
+
+  //       var reader = new FileReader();
+		// reader.onload = function(e) {
+		//   var text = reader.result;
+		//   console.log(text)
+		// }
+		// reader.readAsText(blob);
+		// 
+	//apply试验
+	var arr = [5,2,3,4,2,5];
+	var ma = Math.max.apply(null,arr);//可以把数组里面的每个字遍历一遍 类似call 但是call是列表
+	var maCall = Math.max.call(null,5,2,3,4);//等价上面ma。
+	var mi = Math.min.apply(null,arr);//可以把数组里面的每个字遍历一遍 类似call 但是call是列表
+	var miCall = Math.min.call(null,1,2,3,4);//等价上面ma。
+
+	//es6  ...扩展运算符
+	let esPMax = Math.max(...arr);//等价apply
+	let esPMin = Math.min(...arr);//等价apply
+	console.log(esPMin);
+
+
+	const [first, ...rest] = [[1, 2, 3,], [4, 5]];  
+	console.log(rest);//后者始终是数组 每值就是空数组。但是必须是数组最好一位
+
+	//数组去重
+	const uniqueArray = arr => [...new Set(arr)];
+	console.log(uniqueArray(arr));
+	</script>
+</body>
+</html>

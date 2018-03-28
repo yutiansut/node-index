@@ -1,0 +1,91 @@
+.personPic{
+	width: 100%;
+	height: 77%;
+	overflow: hidden;
+    overflow-y: auto;
+    position: relative;
+}
+.personPic::-webkit-scrollbar {
+  display: none;
+}
+.personPic ul{
+	width: 100%;
+	position: absolute;
+}
+.personPic li{
+	width: 100%;
+}
+.personPic p{
+	padding-left: 0.6rem;
+	font: 500  0.38rem/0.78rem  "Microsoft YaHei"; 
+	color: #acacac;
+}
+.personPic input{
+	opacity: 0;
+	width: 5.1rem;
+	height: 3rem;
+	position: absolute;
+	z-index: 3;
+}
+.personPic img{
+	opacity: 0;
+	border: 0;
+	width: 5.1rem;
+	height: 3.84rem;
+	position: absolute;
+	z-index: 2;
+}
+.personPic .idCardTop{
+	position: relative;
+	width: 5.1rem;
+	height: 3.84rem;
+	margin: 0 0.12rem;
+	background: url('../plot/plot1.png') no-repeat;
+	background-size: 5.1rem 3.84rem;
+}
+.personPic .idCardBot{
+	position: relative;
+	width: 5.1rem;
+	height: 3.84rem;
+	margin: 0 0.12rem;
+	background: url('../plot/plot2.png') no-repeat;
+	background-size: 5.1rem 3.84rem;
+}
+.personPic .validCardTop{
+	position: relative;
+	width: 5.1rem;
+	height: 3.84rem;
+	margin: 0 0.12rem;
+	background: url('../plot/plot3.png') no-repeat;
+	background-size: 5.1rem 3.84rem;
+}
+.personPic .validCardBot{
+	position: relative;
+	width: 5.1rem;
+	height: 3.84rem;
+	margin: 0 0.12rem;
+	background: url('../plot/plot4.png') no-repeat;
+	background-size: 5.1rem 3.84rem;
+}
+.personPic .bankCard{
+	position: relative;
+	width: 5.1rem;
+	height: 3.84rem;
+	margin: 0 0.12rem;
+	background: url('../plot/plot5.png') no-repeat;
+	background-size: 5.1rem 3.84rem;
+}
+.goOnOpenPlotBtn{
+	position: relative;
+	text-align: center;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	background: #f8cc00;
+	color: #191a22;
+	font: 500  0.44rem/1.04rem  "Microsoft YaHei";
+}
+.personPic  .hide{
+	display: none;
+}

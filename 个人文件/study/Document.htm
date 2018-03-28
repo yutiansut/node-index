@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!-- saved from url=(0084)file:///Users/wenheng/Desktop/%E4%B8%AA%E4%BA%BA%E6%96%87%E4%BB%B6/study/object.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		function displayInfo(arg){
+			let a = null;
+			let b = null;
+			if (typeof arg.name === "string") {
+				b = "Name:" + arg.name + "\n";
+			}
+			if (typeof arg.age === "number") {
+				a = "Age:" + arg.age + "\n";
+			}
+			return [a,b];
+		}
+		console.log(displayInfo({
+			name:"王俊阳",
+			age:1,
+		}));
+
+		// console.log(Array.isArray([1,2,3]));
+		// console.log(Array.isArray("1"));
+
+		let  colors = ["green","black","red"];
+		console.log(colors.toString());//结果是 逗号拼接的字符串
+		console.log(colors.valueOf());//结果还是自己 没变化 
+
+		let arr = new Array("red","blue");
+		let count = arr.push("black");
+		console.log(count);
+		count = arr.push("green");//栈 后进先出 push向后添加 返回的是新数组的长度
+		console.log(count);
+		count = arr.pop();//栈 后进先出 pop向后删除 返回的是删除的项
+		console.log(count);
+
+		count = arr.unshift("yellow","white");//队列 先进先出 unshift向前添加 返回是的新数组的长度
+		console.log(count);
+		count = arr.shift();//队列 先进先出 shift向前删除 返回是的删除的项
+		console.log(count);
+		console.log(arr);
+
+		let reverseArr = [1,2,3,5,7];
+		let newArr = reverseArr.reverse();
+		console.log(newArr);//数组翻转返回新的数组 且改变了原数组。
+		console.log(reverseArr);
+
+		let sortArr = [3,5,1,6,10,17,5,3];
+		let newSortArr = sortArr.sort(function(a,b){// 默认第一个参数小于第二个  如果a-b<0就是升序  如果 b-a就是降序 相等的话数组为改变
+			return b-a;
+		});
+		console.log(sortArr);//数组排序返回新的数组 且改变了原数组。
+		console.log(newSortArr);//
+
+		let concatArr = ['red','green','blue'];
+		let newconcatArr = concatArr.concat("yellow",["black","brown"]);
+		console.log(concatArr);
+		console.log(newconcatArr);//返回增加项后新数组，原数组不变。
+
+		let sliceArr = ['red','green','blue'];
+		let newSliceArr = sliceArr.slice(2,1);//如果第一个参数大于第二个参数 返回的是空数组  纯函数
+		console.log(newSliceArr);// 返回删除项的数组 原数组不变  如果是一个参数从此位置截取到数组末尾 两个参数的话截取到第二个参数的位置 但是不包括这个位置。记住：包前不包后 如果是负数的话 拿负数加上数组的长度 如果负数加上长度还小于零的话 即：全部截取。
+		console.log(sliceArr);
+
+		let spliceArr = ['red','green','blue'];
+		let newSpliceArr = spliceArr.splice(0,2);
+		newSpliceArr = spliceArr.splice(0,0,"hha");
+		newSpliceArr = spliceArr.splice(1,1,"hhh")
+		console.log(newSpliceArr);//返回新的删除的数组 原数组也变了对应着更删改查 非春函数
+		console.log(spliceArr);
+
+		let  number = [1,2,3,4,5,6];
+		let  indexOF = number.indexOf(4);
+		console.log(indexOF);//找到了返回其索引 找不到 返回-1； 原数组不变
+		console.log(number);
+
+		let lastIndexOF = number.lastIndexOf(4);
+		console.log(lastIndexOF)
+	</script>
+
+</body></html>

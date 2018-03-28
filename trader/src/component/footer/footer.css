@@ -1,0 +1,81 @@
+/* foot */
+
+.contractFoot{
+	width: 100%;
+	height: 7.2%;
+	background: #191a22;
+	border-top: 0.02rem solid #1b1b23;
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
+.quotes{
+	width: 20%;
+	height: 100%;
+	float: left;
+	background: url('~@/footer/hangqing.png') center no-repeat;
+	background-size: 0.7rem 1.04rem; 
+}
+.quotes1{
+	width: 20%;
+	height: 100%;
+	float: left;
+	background: url('~@/footer/hangqing1.png') center no-repeat;
+	background-size: 0.7rem 1.04rem; 
+}
+.game{
+	width: 20%;
+	height: 100%;
+	float: left;
+	background: url('~@/footer/youxi.png') center no-repeat;
+	background-size: 0.7rem 1.04rem; 
+}
+.game1{
+	width: 20%;
+	height: 100%;
+	float: left;
+	background: url('~@/footer/youxi1.png') center no-repeat;
+	background-size: 0.7rem 1.04rem; 
+}
+.plot{
+	width: 20%;
+	height: 100%;
+	float: left;
+	background: url('~@/footer/celue.png') center no-repeat;
+	background-size: 0.7rem 1.04rem; 
+}
+.plot1{
+	width: 20%;
+	height: 100%;
+	float: left;
+	background: url('~@/footer/celue1.png') center no-repeat;
+	background-size: 0.7rem 1.04rem; 
+}
+.live{
+	width: 20%;
+	height: 100%;
+	float: left;
+	background: url('~@/footer/zhibo.png') center no-repeat;
+	background-size: 0.7rem 1.04rem; 
+}
+.live1{
+	width: 20%;
+	height: 100%;
+	float: left;
+	background: url('~@/footer/zhibo1.png') center no-repeat;
+	background-size: 0.7rem 1.04rem; 
+} 
+.myPort{
+	width: 20%;
+	height: 100%;
+	float: left;
+	background: url('~@/footer/wode.png') center no-repeat;
+	background-size: 0.7rem 1.04rem; 
+}
+.myPort1{
+	width: 20%;
+	height: 100%;
+	float: left;
+	background: url('~@/footer/wode1.png') center no-repeat;
+	background-size: 0.7rem 1.04rem; 
+} 

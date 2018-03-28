@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>visibilityState</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		body{
+			/*direction:rtl;*/
+		}
+		.container{
+			display: -webkit-flex;
+			display: flex;
+			width: 400px;
+			height: 250px;
+			background-color: lightgrey; 
+			/*-webkit-flex-direction: row-reverse;
+			flex-direction: row-reverse;*/
+			/*-webkit-flex-direction: column;
+			flex-direction: column;*/
+			/*-webkit-flex-direction: column-reverse;
+			flex-direction: column-reverse;*/
+			/*-webkit-justify-content: center;
+			justify-content: center;*/
+			/*-webkit-justify-content: space-between;
+			justify-content: space-between;*/
+			-webkit-justify-content: space-around;
+			justify-content: space-around;
+		}
+		.item{
+			background-color: cornflowerblue;
+			width: 100px;
+			height: 100px;
+			margin: 10px;
+		}
+	</style>
+</head>
+<body>
+	<!-- <video src="2.mp4" id="video"></video>
+	<script>
+		var video = document.querySelector("#video");
+		video.play();
+		document.addEventListener('visibilitychange', function() {
+		  var isHidden = document.hidden;
+		  if (isHidden) {
+		    // 动画停止
+		    // 服务器轮询停止 等等
+		    video.pause();
+		  } else {
+		    // 动画开始
+		    // 服务器轮询
+		    video.play();
+		  }
+		});
+	</script> -->
+	<div class="container">
+		<div class="item">1</div>
+		<div class="item">2</div>
+		<div class="item">3</div>
+	</div>
+</body>
+</html>

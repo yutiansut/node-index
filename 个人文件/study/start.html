@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src = "js/jquery-1.7.2.js"></script>
+</head>
+<body>
+	<input type="text" id="txt" />
+	<input type="button" value="按钮" id="btn" />
+	<script>
+		(function(Jquery){
+			$(function(){
+				let oTxt = $("#txt");
+				let oBtn = $("#btn");
+				oBtn.on("click",function(){
+					if (isNaN(Number(oTxt.val()))) return;
+					var oNum = parseInt(oTxt.val());
+					for (var i = 0;i<oNum;i++) {
+						for(var j = 0;j<i;j++){
+							document.write("*" + "&nbsp;&nbsp;")
+						}
+						document.write("<br>");
+					}
+				});
+			});
+		})($);
+	</script>
+</body>
+</html>

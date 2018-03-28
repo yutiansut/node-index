@@ -1,0 +1,30 @@
+.changePw{
+	width: 9.87rem;
+	margin: 0.7rem 0 2.5rem 0.5rem;
+}
+.mewPw{
+	width: 9.1rem;
+	padding-left: 0.77rem;
+    background: #353641;
+    border: none;
+    color: #fff;
+    font: 500 0.40rem/1.22rem "Microsoft YaHei";
+    margin-bottom: 0.34rem;
+}
+.pwType{
+	width: 100%;
+	margin-bottom: 0.25rem;
+}
+.pwType li{
+	text-align: center;
+	margin: 0 0.6rem 0 0.18rem;
+	float: left;
+	width: 2.5rem;
+	color: #acacac;
+    font: 500 0.30rem/0.54rem "Microsoft YaHei";
+	margin-bottom: 0.25rem;
+	background: #353641;
+}
+.pwType .liCol{
+	background: #ff6c00;
+}

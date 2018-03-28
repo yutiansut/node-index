@@ -1,0 +1,45 @@
+.list{
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+    overflow-y: auto;
+    position: absolute;
+}
+.list::-webkit-scrollbar {
+  display: none;
+}
+.newsList{
+	position: absolute;
+	width: 10.36rem;
+	margin-left: 0.22rem;
+	padding-bottom: 1.54rem;
+}
+.newsList li{
+	width: 100%;
+	height: 1.54rem;
+	padding-top: 0.46rem;
+	border-bottom: 0.02rem solid #1b1b23;
+}
+.newsList i{
+	float: left;
+	margin-left: 0.2rem;
+	width: 1.78rem;
+	height: 1.32rem;
+	background: url('img/news.png') no-repeat;
+	background-size: 1.78rem 1.32rem;
+}
+.newsList p{
+	float: left;
+	width: 6.62rem;
+	margin-left: 0.42rem;
+	height: 1.32rem;
+	font: 500  0.31rem/0.61rem  "Microsoft YaHei";
+	color: #fff;
+}
+.newsList span{
+	float: left;
+	margin-top: 1.06rem;
+	font: 500  0.22rem  "Microsoft YaHei";
+	color: #a6a6a6;
+}
+

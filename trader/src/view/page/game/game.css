@@ -1,0 +1,65 @@
+.gameRute{
+	width: 100%;
+	height: 100%;
+	background: #191a22;
+}
+.gameTypeList{
+	width: 100%;
+	height: 66.6%;
+	background: #20212a;
+	position: relative;
+	overflow: hidden;
+	overflow-y: auto;
+}
+.gameTypeList::-webkit-scrollbar {
+  display: none;
+}
+.moreGame{
+	width: 100%;
+	height: 19%;
+	background: #20212a;
+	text-align: center;
+	font: 600  0.44rem/3.8rem  "Microsoft YaHei";
+	color: #f8cc00;
+}
+.game_list{
+	width: 100%;
+	position: absolute;
+	z-index: 11;
+	top: 0rem;
+	left: 0rem;
+}
+.game_list li{
+	width: 100%;	
+}
+.game_list a{
+	display: block;
+}
+.game_list span{
+	display: block;
+	width: 100%;
+	text-align: center;
+	font: 600  0.38rem/1.42rem  "Microsoft YaHei";
+	color: #fff;
+}
+.game_list p{
+	width: 100%;
+	text-align: center;
+	font: 600  0.32rem/0.84rem  "Microsoft YaHei";
+	color: #acacac;
+	
+}
+.game_list .flagPic{
+	display: block;
+	width: 100%;
+	height: 3.8rem;
+	background: url('img/1.png') center no-repeat;
+	background-size: 10.78rem 3.8rem; 
+}
+.game_list .pokerPic{
+	display: block;
+	width: 100%;
+	height: 3.8rem;
+	background: url('img/2.png') center no-repeat;
+	background-size: 10.78rem 3.8rem; 
+}

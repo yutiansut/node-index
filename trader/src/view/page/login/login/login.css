@@ -1,0 +1,25 @@
+.colY{
+	background: #8c7715;
+}
+.otherBtn{
+	width: 9.72rem;
+	font:500 0.38rem/1rem "Microsoft YaHei";
+	color: #fff;
+	margin-bottom: 1rem;
+}
+.appLogin{
+	margin-left: 3rem;
+	width: 4rem;
+}
+.qq{
+	width: 1.11rem;
+	height: 1.11rem;
+	background: url('../img/QQ.png') no-repeat;
+	background-size: 1.11rem 1.11rem;
+}
+.Wchart{
+	width: 1.11rem;
+	height: 1.11rem;
+	background: url('../img/weixin.png') no-repeat;
+	background-size: 1.11rem 1.11rem;
+}

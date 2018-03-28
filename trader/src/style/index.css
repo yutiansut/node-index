@@ -1,0 +1,85 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-touch-callout:none;
+	/* -webkit-user-select:none; */
+	/* -khtml-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select:none; */
+	/* user-select:none; */
+}
+.clearfix{
+	*zoom:1;
+}
+.clearfix:after{
+	content:"";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+body{
+	overflow: hidden;
+    position: relative;
+}
+a{
+	text-decoration: none;
+}
+#root{
+	position: relative;
+	width: 100%;
+}
+
+a{
+	color: #fff;
+	text-decoration: none;
+	webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+a:hover{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+button,input,select,textarea{
+	font-size: 100%;
+	outline: none;
+}
+dt,dd{
+	display: inline-block;
+}
+textarea,input{
+	resize: none;
+	outline: none;
+}
+textarea{
+	resize: none;
+	webkit-appearance:none;
+}
+ul,ol,li{
+	list-style: none;
+}
+#root{
+	width: 100%;
+	height: 100%;
+}
+.contract{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.page-wrapper{
+	height: 100%;
+	background: #20212a;
+	overflow: scroll;
+}
+.pages,.plotPages,.contractRouter{
+	width: 100%;
+	height: 100%;
+}

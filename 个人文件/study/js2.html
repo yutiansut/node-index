@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		.box{
+			width: 300px;
+			height: 300px;
+			border-top:7px solid green;
+			border-bottom:7px dotted yellow;
+			border-left:7px dashed pink;
+			border-right:7px solid blue;
+			margin:70px auto;
+			border-radius: 7px;
+			font: 400 16px/300px "Microsoft Yahei";
+			text-align: center;
+			text-shadow:  -1px -1px 1px rgba(0,0,255,1),
+                -2px -2px 1px rgba(0,0,254,0.5),
+                -6px -6px 10px rgba(0,0,252,0.2);
+			box-shadow: 7px 7px 25px rgba(0,0,255,0.5) inset;
+		}
+		@keyframes mask {
+			0%{-webkit-mask-position:0px 0px;}
+			25%{-webkit-mask-position:619px 0px;}
+			50%{-webkit-mask-position:0px 0px;}
+			75%{-webkit-mask-position:308px 0px;-webkit-mask-size:100%;}
+			100%{-webkit-mask-size:1000%;}
+		}
+		.mask{
+			width: 720px;
+			height: 715px;
+			margin: 17px auto;
+			background: black url(girl.png);
+			-webkit-mask-image:url(mask.png);
+			animation: mask 5s linear infinite forwards;
+		}
+		.gradient{
+			width: 700px;
+			height: 500px;
+			margin: 17px auto;
+			border-radius: 50%;
+			/*background: linear-gradient(to bottom, blue, white);*/
+			/*background: linear-gradient(to left, blue, white);*/
+			/*background: linear-gradient(to top right, blue, white);*/
+			/*background: linear-gradient(0deg, #f00, white);*/
+			/*background: linear-gradient(-90deg, #f00, white);/*270deg = -90deg 记住这一个就不会搞错所有*/
+			/*background: linear-gradient(180deg, #f00 30%, white 50%, blue);*/
+			/*background: linear-gradient(to right, rgba(255,255,255,0),rgba(255,255,255,1)),url(girl.png) center  30%;*/
+			/*background: radial-gradient(red,yellow,rgb(30, 144, 255));*/
+			/*background: radial-gradient(red 5%, yellow 25%,#1e90ff 50%);*/
+			/*background: radial-gradient(ellipse closest-side,red,yellow 20%, #1e90ff 50%, white);*/
+			/*background: radial-gradient(ellipse farthest-corner, red, yellow 20%,#1e90ff 50%, white);*/
+			/*background: repeating-radial-gradient(black, black 5px, white 5px, white 10px);*/
+
+		}
+	</style>
+</head>
+<body>
+	<script>
+		// var  arr = [1,2,3,4,5,6];
+		// var  arrMax2 = [];
+		// arr.map(function(item,index,array){
+		// 	if (item>2) {
+		// 		arrMax2.push(item);
+		// 	}
+		// });
+		// console.log(arrMax2);
+
+		// var  arr = [1,2,3,4,5,6];
+		// var everyArr = arr.every(function(item,index,array){
+		// 	return item >2;
+		// });
+		// console.log(everyArr);
+
+
+		// var  arr = [1,2,3,4,5,6];
+		// var filterArr = arr.filter(function(item,index,array){
+		// 	return item >2;
+		// });
+		// console.log(filterArr);
+
+
+		// var  arr = [1,2,3,4,5,6];
+		// arr.filter(function(item,index,array){
+		// 	if (item >2) {
+		// 		console.log(item);
+		// 	}
+		// });
+
+		// var arr = [2,5,6,8,10];
+		// var arrMap = arr.map(function(item,index,array){
+		// 	return item*2;
+		// });
+		// console.log(arrMap);//
+
+		// var arr = [2,5,6,8,10];
+		// var someBool = arr.some(function(item,index,array){
+		// 	return item>2;
+		// });
+		// console.log(someBool);//true
+
+		// var arr = [2,5,6,8,10];
+		// var sum = arr.reduce(function(pre,cur,index,array){
+		// 	return pre + cur;
+		// });
+		// console.log(sum);
+		// var arr = [2,9,6,8,10];
+		// var sum = arr.reduceRight(function(pre,cur,index,array){
+		// 	if (cur == 9) {
+		// 		return 0;
+		// 	}
+		// 	return pre + cur;
+
+		// });
+		// console.log(sum);
+
+		var oDate = new Date();
+		console.log(oDate.getTime());//时间戳 1520502376239 等价于 +oDate 即 + new Date();
+		console.log(oDate.getYear());//年数118  距离1990 年的年数 
+		console.log(oDate.getFullYear());//2018 今年年份
+		console.log(oDate.getMonth());//02 中国需要加+1
+		console.log(oDate.getDay());//星期 4 
+		console.log(oDate.getDate());//每个月的几号 8
+		console.log(oDate.getHours());//小时 17
+		console.log(oDate.getMinutes());//分钟 46
+		console.log(oDate.getSeconds());//秒 16
+		console.log(oDate.getMilliseconds());//毫秒 239
+
+	</script>
+	<!-- <p class="box">我就是这么任性，怎么了？</p> -->
+	<p class="mask"></p>
+	<!-- <p class="gradient"></p> -->
+</body>
+</html>

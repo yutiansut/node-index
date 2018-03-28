@@ -1,0 +1,33 @@
+.newPw{
+	width: 9.87rem;
+	margin: 0.7rem 0 2.5rem 0.5rem;
+}
+.verficaNew{
+	float: left;
+	width: 5.14rem;
+	padding-left: 0.6rem;
+    background: #353641;
+    border: none;
+    color: #fff;
+    font: 500 0.40rem/1.22rem "Microsoft YaHei";
+    margin-top: 0.24rem;
+    margin-right: 0.15rem;
+}
+.verficaNewBtn{
+	width: 3.8rem;
+	color: #74757e;
+    font: 500 0.40rem/1.06rem "Microsoft YaHei";
+    border: 0.03rem solid #d2d2d2;
+    border-radius: 0.08rem;
+    margin-top: 0.24rem;
+    text-align: center;
+}
+.verficaNewBtnY{
+    width: 3.8rem;
+    color: #f8cc00;
+    font: 500 0.40rem/1.06rem "Microsoft YaHei";
+    border: 0.03rem solid #f8cc00;
+    border-radius: 0.08rem;
+    margin-top: 0.24rem;
+    text-align: center;
+}

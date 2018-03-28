@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>&&</title>
+</head>
+<body>
+	<script type="text/javascript">
+		// // &&
+		// var result1 = true && notLive;
+		// console.log(result1);//报错  notLive is not defined  原因是前者是&& 必须所有都为true  才可以通过。第一个为true，就要继续看下一个，犹豫notLive没申明  
+		// var result2 = false && notLive;
+		// console.log(result2);//假如第一个为false，那肯定条件不满足，程序将不会去看第二个 也就不报错 
+
+		// // ||
+		// var res1 = true || notLive;
+		// console.log(res1);//由于第一个为true  已经满足要求，代码短路操作  将不会再看后面的，所以不报错
+
+		// var res2 = false || notLive;//报错 notLive  is not defined 原因：由于是|| 只要一个是true即可，先看第一个是false，会接着看第二个，由于第二个notLive未定义 即报错。
+		// console.log(res2);
+
+		var str = "5";
+		var resultAdd = 5 + str;//如果一个是字符串 一个是数字 两个相加 相当于字符换拼接
+		console.log(typeof resultAdd);//string
+
+		var str = "5";
+		var resultAdd = 5 - str;//如果一个是字符串 一个是数字 两个相减 相当于数字运算
+		console.log(typeof resultAdd);//number
+
+		console.log(23 < "3");//一个是字符串的数字 一个是数子，会隐式转换，会转换为数字，然后再比较。
+		console.log("23" < "3");//两个都是字符串的数字 不会隐式转换，会转换为字符串对应的字符编码值，然后再比较。
+		var num = 0;
+		for(var i = 1;i < 10;i++) {
+			if (i%5 === 0) {
+				break;
+			}
+			num++;
+		}
+		console.log(num);//continue 8 break 4  遇到了跳过，break是停止。
+
+		function arg() {
+			console.log(arguments.length);
+		}
+		arg(1,2);
+	</script>
+</body>
+</html>
