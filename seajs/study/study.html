@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<div>
+		<input type="text" id="txt" />
+		<input type="button" value="按钮" id="btn" />
+		<p id="nav"></p>
+	</div>
+	<script src="../study-modules/sea.js"></script>
+	<script>
+		seajs.config({
+			base:"../study-modules/",
+			alias:{
+				"jquery":"jquery/jquery/1.10.1/jquery.js",
+			}
+		});
+		seajs.use("../studyjs/main", function(main) {
+	      main.init();
+	    });
+	</script>
+</body>
+</html>
