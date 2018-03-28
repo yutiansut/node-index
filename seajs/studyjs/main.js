@@ -6,6 +6,7 @@ define(function(require, exports, module) {
 				var oTxt = $("#txt").val();
 				var oNav = $("#nav");
 				oNav.html(oTxt);
+				console.log(1)
 			});
 		}
 	}
