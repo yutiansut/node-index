@@ -1,0 +1,199 @@
+*{
+	margin: 0;
+	padding: 0;
+	-webkit-touch-callout:none;
+}
+.clearfix{
+	*zoom:1;
+}
+.clearfix:after{
+	content:"";
+	display: block;
+	height: 0;
+	visibility: hidden;
+	clear: both;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+body{
+	overflow: hidden;
+    position: relative;
+}
+a{
+	color: #fff;
+	text-decoration: none;
+	webkit-tap-highlight-color:rgba(0,0,0,0);
+}
+a:hover{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+button,input,select,textarea{
+	font-size: 100%;
+	outline: none;
+}
+dt,dd{
+	display: inline-block;
+}
+textarea,input{
+	resize: none;
+	outline: none;
+}
+textarea{
+	resize: none;
+	webkit-appearance:none;
+}
+ul,ol,li{
+	list-style: none;
+}
+.login{
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0,0.6);
+	position: fixed;
+	z-index: 3;
+}
+.inputLogin{
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	margin-left: -150px;
+	width: 300px;
+}
+.name,.password{
+	padding-left: 8px;
+	width: 80%;
+	height: 40px;
+	font: 500 20px  "Microsoft YaHei";
+	background: #ccc;
+	border: 2px  solid #000;
+	border-radius: 10px;
+}
+#btn{
+	width: 80px;
+	height: 35px;
+	font: 500 20px  "Microsoft YaHei";
+	background: #f0f;
+	border: 2px  solid #000;
+	border-radius: 6px;
+	margin-left: 110px;
+}
+.app{
+	width: 1024px;
+	height: 1370px;
+	margin: 0 auto;
+	position: relative;
+	background: url('../images/newYear.png') center no-repeat;
+}
+.navTitle{
+	text-align: center;
+	line-height: 200px;
+	font: 500 55px  "Microsoft YaHei";
+	color: #000;
+	padding-top: 50px;
+	letter-spacing:2px;
+}
+.newWord{
+	width: 750px;
+	margin: 0 auto;
+	text-indent: 2em;
+	line-height: 200px;
+	font: 500 28px  "Microsoft YaHei";
+	color: #000;
+	padding-top: 10px;
+	letter-spacing:2px;
+}
+.giftTitle{
+	text-align: center;
+	line-height: 200px;
+	font: 500 40px  "Microsoft YaHei";
+	color: #000;
+	padding-top: 280px;
+	letter-spacing:2px;
+}
+.dog{
+	width: 470px;
+	height: 300px;
+	margin: 0 auto;
+}
+.dogEye{
+	width: 98px;
+	height: 63px;
+	background: url('../images/5.gif') center no-repeat;
+	position: fixed;
+	top: 637px;
+	left: 581px;
+	z-index: 1;
+}
+.girlEye{
+	width: 44px;
+	height: 37px;
+	background: url('../images/6.gif') center no-repeat;
+	position: fixed;
+	top: 637px;
+	left: 398px;
+	z-index: 1;
+}
+.dogPic{
+	width: 257px;
+	height: 265px;
+	background: url('../images/images.png') center no-repeat;
+}
+.girlPic{
+	width: 210px;
+	height: 265px;
+	background: url('../images/girl.png') center no-repeat;
+}
+.notice{
+	position: absolute;
+	right: 257px;
+	top: 805px;
+	font: 500 27px  "Microsoft YaHei";
+	color: green;
+	text-decoration: underline;
+}
+.gif{
+	width: 142px;
+	height: 222px;
+	background: url('../images/3.gif') center no-repeat;
+	position: absolute;
+	left: 187px;
+	top: 503px;
+}
+.gif1{
+	width: 142px;
+	height: 222px;
+	background: url('../images/4.gif') center no-repeat;
+	position: absolute;
+	right: 187px;
+	top: 503px;
+}
+.gif2{
+	width: 142px;
+	height: 222px;
+	background: url('../images/1.gif') center no-repeat;
+	position: absolute;
+	left: 35px;
+	top: 461px;
+}
+.gif3{
+	width: 142px;
+	height: 222px;
+	background: url('../images/2.gif') center no-repeat;
+	position: absolute;
+	right: 49px;
+	top: 510px;
+}
+#canvas1{
+    background: rgba(0,0,0,0.5);
+    position: absolute;
+    top: 805px;
+    left:15%;
+    z-index: 3;
+}
