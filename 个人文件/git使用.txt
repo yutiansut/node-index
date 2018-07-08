@@ -1,0 +1,14 @@
+1，建立本地分支   git checkout -b [name]
+2, 开始在这个分支开发代码，开发结束的时候需要把修改的代码先保存在本地分支 git add . ----> git commit -m "提交注释"
+3，也想在远程建立对应的分支储存代码的话 git push origin(主机名称) [本地分支名称]：[远程分支的名字--没有的话自定义一个，一般名字跟本地的一样，这样就建立了一种关系了]。
+4，代码合并 先切换到要合并分支的目标分支去 一般是master ，git checkout master ---> git merge [合并分支名称]
+5，合并完了 不想使用的时候可以把本地的分支删除 git branch -d [删除分支的名字]
+6，如果远程的分支也想删除，即给远程提交个空的文件  git push orign :[删除分支的名字]。
+7，如果你本地建立了分支，但是你想把分支的代码合并到已有的远程分支上，需要先把远程的代码拉去后，在提交 git pull origin [远程所要提取的分支名称]：[本地分支名称]
+
+8，报错：To git@github.com:xxx/xxx.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'git@github.com:xxx/xxx.git'
+hint: Updates were rejected because the remote contains work that you do
+原因：GitHub远程仓库中的README.md文件不在本地库中。
+解决方案：git pull --rebase origin [要提交的远程名字]
